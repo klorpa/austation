@@ -6,7 +6,7 @@ retval=1
 
 for var
 do
-	if [[ $var != -* && $var == *.dme && -z "$dmepath"]]
+	if [[ $var != -* && $var == *.dme ]]
 	then
 		dmepath=`sed -r 's/.{4}$//'`
 		break
