@@ -43,7 +43,7 @@ COPY . .
 RUN apt-get update \
     && apt-get install -y --no-install-recommends dos2unix \
     && rm -rf /var/lib/apt/lists/* \
-    && DreamMaker -max_errors 0 austation.dme && dos2unix tools/deploy.sh && tools/deploy.sh /deploy
+    && DreamMaker -max_errors 0 beestation.dme && dos2unix tools/deploy.sh && tools/deploy.sh /deploy
 
 FROM dm_base
 
