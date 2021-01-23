@@ -6,6 +6,7 @@ on:
     - 'html/changelogs/**'
     branches:
     - master
+    - environment_changes
   pull_request:
     branches:
     - master
