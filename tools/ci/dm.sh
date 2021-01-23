@@ -1,14 +1,14 @@
 
 #!/bin/bash
 
-dmepath=""
+dmepath="austation.dme"
 retval=1
 
 for var
 do
 	if [[ $var != -* && $var == *.dme ]]
 	then
-		dmepath=`sed -r 's/.{4}$//'`
+		dmepath=`echo $var | sed -r 's/.{4}$//'`
 		break
 	fi
 done
