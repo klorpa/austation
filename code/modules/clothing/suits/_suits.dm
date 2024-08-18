@@ -1,4 +1,4 @@
-#define FOOTSTEP_COOLDOWN 3	//3 deci-seconds
+#define FOOTSTEP_COOLDOWN 3	//3 deciseconds
 
 /obj/item/clothing/suit
 	icon = 'icons/obj/clothing/suits.dmi'
@@ -51,7 +51,7 @@
 
 /obj/item/clothing/suit/equipped(mob/user, slot)
 	. = ..()
-	//If we dont have move sounds, ignore
+	//If we don't have move sounds, ignore
 	if(!islist(move_sound))
 		return
 	//Check if we were taken off.

@@ -152,7 +152,7 @@
 			info_list -= initial(description_holder.label_desc)
 			sticker_traits -= new_trait
 
-//This is just a hacky way of getting the info from a datum using its desc becuase I wrote this last and it's not heartbreaking
+//This is just a hacky way of getting the info from a datum using its desc because I wrote this last and it's not heartbreaking
 /obj/item/xenoartifact_labeler/proc/desc2datum(udesc)
 	for(var/datum/xenoartifact_trait/X as() in GLOB.xenoa_all_traits)
 		if((udesc == initial(X.desc)) || (udesc == initial(X.label_name)))

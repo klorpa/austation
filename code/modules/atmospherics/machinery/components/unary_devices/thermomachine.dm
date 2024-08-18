@@ -109,7 +109,7 @@
 
 /obj/machinery/atmospherics/components/unary/thermomachine/process_atmos()
 	..()
-	if(!is_operational || !on || !nodes[1])  //if it has no power or its switched off, dont process atmos
+	if(!is_operational || !on || !nodes[1])  //if it has no power or its switched off, don't process atmos
 		return
 	var/datum/gas_mixture/air_contents = airs[1]
 

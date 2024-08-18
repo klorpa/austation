@@ -252,7 +252,7 @@
 		ui.open()
 		ui.set_autoupdate(TRUE) // Turf gas mixture
 
-//Oh my, thats a lot of data being sent that should probably be refactored
+//Oh my, that's a lot of data being sent that should probably be refactored
 /obj/machinery/airalarm/ui_data(mob/user)
 	var/data = list(
 		"locked" = locked,

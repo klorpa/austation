@@ -16,7 +16,7 @@
 	///if TRUE connects will spin with the parent object visually and codually, so you can have it work in any direction. FALSE if you want it to be static
 	var/turn_connects = TRUE
 
-/datum/component/plumbing/Initialize(start=TRUE, _turn_connects=TRUE) //turn_connects for wheter or not we spin with the object to change our pipes
+/datum/component/plumbing/Initialize(start=TRUE, _turn_connects=TRUE) //turn_connects for whether or not we spin with the object to change our pipes
 	if(!ismovable(parent))
 		return COMPONENT_INCOMPATIBLE
 
@@ -180,7 +180,7 @@
 					if(P)
 						direct_connect(P, D)
 
-/// Toggle our machinery on or off. This is called by a hook from default_unfasten_wrench with anchored as only param, so we dont have to copypaste this on every object that can move
+/// Toggle our machinery on or off. This is called by a hook from default_unfasten_wrench with anchored as only param, so we don't have to copypaste this on every object that can move
 /datum/component/plumbing/proc/toggle_active(obj/O, new_state)
 	SIGNAL_HANDLER
 
@@ -224,7 +224,7 @@
 	if(!P.active)
 		return
 	var/opposite_dir = turn(dir, 180)
-	if(P.demand_connects & opposite_dir && supply_connects & dir || P.supply_connects & opposite_dir && demand_connects & dir) //make sure we arent connecting two supplies or demands
+	if(P.demand_connects & opposite_dir && supply_connects & dir || P.supply_connects & opposite_dir && demand_connects & dir) //make sure we aren't connecting two supplies or demands
 		var/datum/ductnet/net = new()
 		net.add_plumber(src, dir)
 		net.add_plumber(P, opposite_dir)

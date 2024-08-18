@@ -6,7 +6,7 @@
 	var/update_id_name = FALSE //If the name of the human is same as the name on the id they're wearing we'll update provided id when equipping
 
 /datum/outfit/varedit/pre_equip(mob/living/carbon/human/H, visualsOnly)
-	H.delete_equipment() //Applying VV to wrong objects is not reccomended.
+	H.delete_equipment() //Applying VV to wrong objects is not recommended.
 	. = ..()
 
 /datum/outfit/varedit/proc/set_equipement_by_slot(slot,item_path)

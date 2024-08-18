@@ -496,7 +496,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 				if(drunkenness >= 12.9 && drunkenness <= 13.8)
 					drunkenness = round(drunkenness, 0.01)
 					var/ballmer_percent = 0
-					if(drunkenness == 13.35) // why run math if I dont have to
+					if(drunkenness == 13.35) // why run math if I don't have to
 						ballmer_percent = 1
 					else
 						ballmer_percent = (-abs(drunkenness - 13.35) / 0.9) + 1
@@ -611,7 +611,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 /*
  * The mob is having a heart attack
  *
- * NOTE: this is true if the mob has no heart and needs one, which can be suprising,
+ * NOTE: this is true if the mob has no heart and needs one, which can be surprising,
  * you are meant to use it in combination with can_heartattack for heart attack
  * related situations (i.e not just cardiac arrest)
  */

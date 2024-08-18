@@ -152,11 +152,11 @@
 			var/datum/antagonist/obsessed/obs_datum = locate() in user?.mind?.antag_datums
 			if(obs_datum)
 				if(obs_datum.trauma.obsession.name != recipient.name)
-					to_chat(user, "<span class='notice'>This <em>worthless</em> piece of parchment isn't adressed to your beloved!</span>")
+					to_chat(user, "<span class='notice'>This <em>worthless</em> piece of parchment isn't addressed to your beloved!</span>")
 					return
 				can_open = TRUE
 			if(user.real_name != recipient.name && !can_open)
-				to_chat(user, "<span class='warning'>We must keep our disguise intact.</span>")  // cuz your disguise cant open the mail so you shouldnt either
+				to_chat(user, "<span class='warning'>We must keep our disguise intact.</span>")  // cuz your disguise can't open the mail so you shouldn't either
 				return
 
 	user.visible_message("[user] start to unwrap a package...", \

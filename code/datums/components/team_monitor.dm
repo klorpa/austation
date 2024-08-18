@@ -211,7 +211,7 @@ GLOBAL_LIST_EMPTY(tracker_beacons)
 	START_PROCESSING(SSprocessing, src)
 	//Register parent signal
 	RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(parent_moved))
-	//Mob doesnt have a hud, dont add hud arrows
+	//Mob doesn't have a hud, don't add hud arrows
 	if(!target.hud_used)
 		return
 	for(var/datum/component/tracking_beacon/key in tracking)
@@ -544,7 +544,7 @@ GLOBAL_LIST_EMPTY(tracker_beacons)
 
 //Add ourselves to other tracking components
 /datum/component/tracking_beacon/proc/add_to_huds()
-	//If we are invisibile, dont bother
+	//If we are invisible, don't bother
 	if(!visible)
 		return
 	//Find other trackers and add ourselves to their tracking network

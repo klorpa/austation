@@ -237,7 +237,7 @@ RLD
 		silo_link = !silo_link
 		to_chat(user, "<span class='notice'>You change \the [src]'s storage link state: [silo_link ? "ON" : "OFF"].</span>")
 	else
-		to_chat(user, "<span class='warning'>\the [src] dont have remote storage connection.</span>")
+		to_chat(user, "<span class='warning'>\the [src] don't have remote storage connection.</span>")
 
 /obj/item/construction/rcd/proc/get_airlock_image(airlock_type)
 	var/obj/machinery/door/airlock/proto = airlock_type
@@ -803,9 +803,9 @@ RLD
 
 	///type of the plumbing machine
 	var/blueprint = null
-	///index, used in the attack self to get the type. stored here since it doesnt change
+	///index, used in the attack self to get the type. stored here since it doesn't change
 	var/list/choices = list()
-	///index, used in the attack self to get the type. stored here since it doesnt change
+	///index, used in the attack self to get the type. stored here since it doesn't change
 	var/list/name_to_type = list()
 	///
 	var/list/machinery_data = list("cost" = list(), "delay" = list())
@@ -848,7 +848,7 @@ RLD
 		return FALSE
 	. = TRUE
 	for(var/obj/O in T.contents)
-		if(O.density) //let's not built ontop of dense stuff, like big machines and other obstacles, it kills my immershion
+		if(O.density) //let's not built on top of dense stuff, like big machines and other obstacles, it kills my immersion
 			return FALSE
 
 /obj/item/construction/plumbing/afterattack(atom/A, mob/user, proximity)

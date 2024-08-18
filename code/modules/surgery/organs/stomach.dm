@@ -210,7 +210,7 @@
 	. = ..()
 	if(. & EMP_PROTECT_SELF)
 		return
-	if(!COOLDOWN_FINISHED(src, severe_cooldown)) //So we cant just spam emp to kill people.
+	if(!COOLDOWN_FINISHED(src, severe_cooldown)) //So we can't just spam emp to kill people.
 		owner.vomit(stun = FALSE)
 		COOLDOWN_START(src, severe_cooldown, 10 SECONDS)
 	if(prob(emp_vulnerability/severity)) //Chance of permanent effects

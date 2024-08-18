@@ -11,7 +11,7 @@
 	icon_state = "gondola"
 	icon_living = "gondola"
 	SET_BASE_PIXEL(-16, -5) //2x2 sprite
-	layer = TABLE_LAYER//so that deliveries dont appear underneath it
+	layer = TABLE_LAYER//so that deliveries don't appear underneath it
 	loot = list(/obj/effect/decal/cleanable/blood/gibs, /obj/item/stack/sheet/animalhide/gondola = 2, /obj/item/reagent_containers/food/snacks/meat/slab/gondola = 2)
 	//Gondolas aren't affected by cold.
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -49,7 +49,7 @@
 /mob/living/simple_animal/pet/gondola/gondolapod/verb/check()
 	set name = "Count Contents"
 	set category = "Gondola"
-	set desc = "Take a deep look inside youself, and count up what's inside"
+	set desc = "Take a deep look inside yourself, and count up what's inside"
 	var/total = contents.len
 	if (total)
 		to_chat(src, "<span class='notice'>You detect [total] object\s within your incredibly vast belly.</span>")

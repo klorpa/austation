@@ -70,7 +70,7 @@
 #define	MINOR_NEGATIVE		4
 
 
-// Mutation classes. Normal being on them, extra being additional mutations with instability and other being stuff you dont want people to fuck with like wizard mutate
+// Mutation classes. Normal being on them, extra being additional mutations with instability and other being stuff you don't want people to fuck with like wizard mutate
 #define MUT_NORMAL 1
 #define MUT_EXTRA 2
 #define MUT_OTHER 3

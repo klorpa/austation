@@ -104,7 +104,7 @@
 	src.updateDialog()
 
 /obj/machinery/power/generator/process()
-	//Setting this number higher just makes the change in power output slower, it doesnt actualy reduce power output cause **math**
+	//Setting this number higher just makes the change in power output slower, it doesn't actually reduce power output cause **math**
 	var/power_output = round(lastgen / 10)
 	add_avail(power_output)
 	lastgenlev = power_output

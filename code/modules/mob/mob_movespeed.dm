@@ -103,7 +103,7 @@ Key procs
 		var/amt = data[MOVESPEED_DATA_INDEX_MULTIPLICATIVE_SLOWDOWN]
 		if(conflict)
 			// Conflicting modifiers prioritize the larger slowdown or the larger speedup
-			// We purposefuly don't handle mixing speedups and slowdowns on the same id
+			// We purposefully don't handle mixing speedups and slowdowns on the same id
 			if(abs(conflict_tracker[conflict]) < abs(amt))
 				conflict_tracker[conflict] = amt
 			else

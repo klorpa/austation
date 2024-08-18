@@ -212,7 +212,7 @@
 		if((is_away_level(z) || is_away_level(cam.z)) && (cam.get_virtual_z_level() != get_virtual_z_level()))//if on away mission, can only receive feed from same z_level cameras
 			continue
 		if(!islist(cam.network))
-			stack_trace("Camera in a cameranet has invaid camera network")
+			stack_trace("Camera in a cameranet has invalid camera network")
 			continue
 		if(!length(cam.network & network))
 			continue
@@ -228,7 +228,7 @@
 	icon_keyboard = "no_keyboard"
 	icon_screen = "detective_tv"
 
-	//these muthafuckas arent supposed to smooth
+	//these muthafuckas aren't supposed to smooth
 	base_icon_state = null
 	smoothing_flags = null
 	smoothing_groups = null
@@ -266,7 +266,7 @@
 
 /obj/machinery/computer/security/qm
 	name = "\improper Quartermaster's camera console"
-	desc = "A console with access to the mining, auxillary base and vault camera networks."
+	desc = "A console with access to the mining, auxiliary base and vault camera networks."
 	network = list("mine", "auxbase", "vault")
 	circuit = null
 
@@ -278,7 +278,7 @@
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "telescreen"
 
-	//these muthafuckas arent supposed to smooth
+	//these muthafuckas aren't supposed to smooth
 	base_icon_state = null
 	smoothing_flags = null
 	smoothing_groups = null

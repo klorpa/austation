@@ -37,7 +37,7 @@
 
 /obj/item/multitool/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] puts the [src] to [user.p_their()] chest. It looks like [user.p_theyre()] trying to pulse [user.p_their()] heart off!</span>")
-	return OXYLOSS//theres a reason it wasn't recommended by doctors
+	return OXYLOSS//there's a reason it wasn't recommended by doctors
 
 // Syndicate device disguised as a multitool; it will turn red when an AI camera is nearby.
 /obj/item/multitool/ai_detect
@@ -136,7 +136,7 @@
 			detect_state = PROXIMITY_ON_SCREEN
 			break
 
-		if(distance < rangewarning) //ai cant see us but is close
+		if(distance < rangewarning) //ai can't see us but is close
 			detect_state = PROXIMITY_NEAR
 
 /mob/camera/ai_eye/remote/ai_detector

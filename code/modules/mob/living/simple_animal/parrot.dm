@@ -69,7 +69,7 @@
 
 	var/parrot_damage_upper = 10
 	var/parrot_state = PARROT_WANDER //Hunt for a perch when created
-	var/parrot_sleep_max = 25 //The time the parrot sits while perched before looking around. Mosly a way to avoid the parrot's AI in life() being run every single tick.
+	var/parrot_sleep_max = 25 //The time the parrot sits while perched before looking around. Mostly a way to avoid the parrot's AI in life() being run every single tick.
 	var/parrot_sleep_dur = 25 //Same as above, this is the var that physically counts down
 	var/parrot_dam_zone = list(BODY_ZONE_CHEST, BODY_ZONE_HEAD, BODY_ZONE_L_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_ARM, BODY_ZONE_R_LEG) //For humans, select a bodypart to attack
 
@@ -90,7 +90,7 @@
 	var/atom/movable/parrot_interest = null
 
 	//Parrots will generally sit on their perch unless something catches their eye.
-	//These vars store their preffered perch and if they dont have one, what they can use as a perch
+	//These vars store their preferred perch and if they don't have one, what they can use as a perch
 	var/obj/parrot_perch = null
 	var/obj/desired_perches = list(/obj/structure/frame/computer, 		/obj/structure/displaycase, \
 									/obj/structure/filingcabinet,		/obj/machinery/teleport, \
@@ -157,7 +157,7 @@
 
 /mob/living/simple_animal/parrot/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans, list/message_mods = list())
 	. = ..()
-	if(speaker != src && prob(50)) //Dont imitate ourselves
+	if(speaker != src && prob(50)) //Don't imitate ourselves
 		if(!radio_freq || prob(10))
 			// No being problematic, Poly!
 			if(!CHAT_FILTER_CHECK(raw_message))
@@ -384,7 +384,7 @@ GLOBAL_LIST_INIT(strippable_parrot_items, create_strippable_list(list(
 
 
 //-----SPEECH
-	/* Parrot speech mimickry!
+	/* Parrot speech mimicry!
 	   Phrases that the parrot Hear()s get added to speach_buffer.
 	   Every once in a while, the parrot picks one of the lines from the buffer and replaces an element of the 'speech' list. */
 /mob/living/simple_animal/parrot/handle_automated_speech()
@@ -398,7 +398,7 @@ GLOBAL_LIST_INIT(strippable_parrot_items, create_strippable_list(list(
 
 /mob/living/simple_animal/parrot/handle_automated_movement()
 	if(!isturf(src.loc) || !(mobility_flags & MOBILITY_MOVE) || buckled)
-		return //If it can't move, dont let it move. (The buckled check probably isn't necessary thanks to canmove)
+		return //If it can't move, don't let it move. (The buckled check probably isn't necessary thanks to canmove)
 
 	if(client && stat == CONSCIOUS && parrot_state != icon_living)
 		icon_state = icon_living
@@ -443,7 +443,7 @@ GLOBAL_LIST_INIT(strippable_parrot_items, create_strippable_list(list(
 
 						newspeak.Add(possible_phrase)
 
-				else //If we have no headset or channels to use, dont try to use any!
+				else //If we have no headset or channels to use, don't try to use any!
 					for(var/possible_phrase in speak)
 						if(CHAT_FILTER_CHECK(possible_phrase))
 							continue
@@ -460,7 +460,7 @@ GLOBAL_LIST_INIT(strippable_parrot_items, create_strippable_list(list(
 				icon_state = icon_living
 			return
 
-//-----WANDERING - This is basically a 'I dont know what to do yet' state
+//-----WANDERING - This is basically a 'I don't know what to do yet' state
 	else if(parrot_state == PARROT_WANDER)
 		//Stop movement, we'll set it later
 		SSmove_manager.stop_looping(src)
@@ -659,7 +659,7 @@ GLOBAL_LIST_INIT(strippable_parrot_items, create_strippable_list(list(
 				return O
 	return null
 
-//This proc was made to save on doing two 'in view' loops seperatly
+//This proc was made to save on doing two 'in view' loops separately
 /mob/living/simple_animal/parrot/proc/search_for_perch_and_item()
 	for(var/atom/movable/AM in view(src))
 		for(var/perch_path in desired_perches)
@@ -764,7 +764,7 @@ GLOBAL_LIST_INIT(strippable_parrot_items, create_strippable_list(list(
 		return -1
 
 	if(!held_item)
-		if(src == usr) //So that other mobs wont make this message appear when they're bludgeoning you.
+		if(src == usr) //So that other mobs won't make this message appear when they're bludgeoning you.
 			to_chat(src, "<span class='danger'>You have nothing to drop!</span>")
 		return 0
 

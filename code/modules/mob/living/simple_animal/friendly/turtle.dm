@@ -32,7 +32,7 @@
 
 /mob/living/simple_animal/turtle/handle_automated_movement()
 	if(!isturf(src.loc) || !(mobility_flags & MOBILITY_MOVE) || buckled)
-		return //If it can't move, dont let it move.
+		return //If it can't move, don't let it move.
 
 //-----HIDING
 	if(icon_state == icon_hiding)

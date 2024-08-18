@@ -34,4 +34,4 @@
 	var/declared_complete = FALSE
 	// List or string of JOB_NAME defines that this applies to.
 	var/jobs
-	explanation_text = "Yell at people on github if this ever shows up. Something involving crew objectives is broken."
+	explanation_text = "Yell at people on GitHub if this ever shows up. Something involving crew objectives is broken."

@@ -38,7 +38,7 @@ GLOBAL_VAR(restart_counter)
 	init_byond_tracy()
 	#endif
 	// Anything else that needs to happen before /world/New() goes here.
-	// On TG this includes debugger init and intializing Master, but for now we'll leave that as a BYOND global.
+	// On TG this includes debugger init and initializing Master, but for now we'll leave that as a BYOND global.
 
 //This happens after the Master subsystem new(s) (it's a global datum)
 //So subsystems globals exist, but are not initialised

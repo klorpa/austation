@@ -308,7 +308,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 			if((ACCESS_HOP in inserted_scan_id.access) && ((target_dept==DEPT_GEN) || !target_dept))
 				paycheck_departments |= ACCOUNT_SRV_ID
 				paycheck_departments |= ACCOUNT_CIV_ID
-				paycheck_departments |= ACCOUNT_CAR_ID //Currently no seperation between service/civillian and supply
+				paycheck_departments |= ACCOUNT_CAR_ID //Currently no separation between service/civilian and supply
 			if((ACCESS_HOS in inserted_scan_id.access) && ((target_dept==DEPT_SEC) || !target_dept))
 				paycheck_departments |= ACCOUNT_SEC_ID
 			if((ACCESS_CMO in inserted_scan_id.access) && ((target_dept==DEPT_MED) || !target_dept))
@@ -585,7 +585,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 					else
 						if((ACCESS_HOP in inserted_scan_id.access) && ((target_dept==DEPT_GEN) || !target_dept))
 							region_access |= DEPT_GEN
-							region_access |= DEPT_SUP //Currently no seperation between service/civillian and supply
+							region_access |= DEPT_SUP //Currently no separation between service/civilian and supply
 							region_access_payment |= ACCOUNT_COM_BITFLAG | ACCOUNT_CIV_BITFLAG | ACCOUNT_SRV_BITFLAG | ACCOUNT_CAR_BITFLAG
 							get_subordinates(JOB_NAME_HEADOFPERSONNEL)
 						if((ACCESS_HOS in inserted_scan_id.access) && ((target_dept==DEPT_SEC) || !target_dept))

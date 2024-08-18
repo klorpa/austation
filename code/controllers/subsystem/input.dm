@@ -20,7 +20,7 @@ SUBSYSTEM_DEF(input)
 
 	return ..()
 
-// This is for when macro sets are eventualy datumized
+// This is for when macro sets are eventually datumized
 /datum/controller/subsystem/input/proc/setup_default_macro_sets()
 	var/list/static/default_macro_sets
 

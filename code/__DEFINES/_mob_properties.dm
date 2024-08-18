@@ -29,7 +29,7 @@ Behavior-dependent macros:
 In the context of these macros, "source" is where the property is being applied/removed from. The actual value of the source argument depends
 on what makes sense in context, for example things where multiple objects of the same type may apply stacking properties it might make sense
 to use the caller's src as the source; but for things where the property should be per-type unique, src.type may make more sense. A string
-might make sense for when multiple types should overwrite eachothers applications of the property.
+might make sense for when multiple types should overwrite each other's applications of the property.
 
 To modify already-applied values, just run the APPLY macro again.
 

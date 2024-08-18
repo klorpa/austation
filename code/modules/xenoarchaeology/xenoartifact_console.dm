@@ -157,7 +157,7 @@
 			var/obj/item/xenoartifact/A = new (get_turf(linked_inbox.loc), S.difficulty)
 			var/datum/component/xenoartifact_pricing/X = A.GetComponent(/datum/component/xenoartifact_pricing)
 			if(X)
-				X.price = S.price //dont bother trying to use internal singals for this
+				X.price = S.price //don't bother trying to use internal signals for this
 				sellers -= S
 				stability = max(0, stability - STABILITY_COST)
 				budget.adjust_money(-1*S.price)
@@ -215,7 +215,7 @@
 
 				sold_artifacts += entry
 				qdel(selling_item)
-		else //Future feature, not currently in use, wont delete captains gun. Placeholder
+		else //Future feature, not currently in use, won't delete captains gun. Placeholder
 			final_price = 120*rand(1, 10)
 			budget.adjust_money(final_price)
 			sold_artifacts += info
@@ -248,7 +248,7 @@
 			RegisterSignal(I, COMSIG_PARENT_QDELETING, PROC_REF(on_inbox_del))
 			say("Successfully linked [I].")
 			return
-	say("Unable to find linkable hadrware.")
+	say("Unable to find linkable hardware.")
 
 /obj/machinery/computer/xenoartifact_console/proc/on_inbox_del() //Hard del measures
 	SIGNAL_HANDLER

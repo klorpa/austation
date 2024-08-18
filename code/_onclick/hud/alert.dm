@@ -540,7 +540,7 @@ Recharging stations are available in robotics, the dormitory bathrooms, and the 
 
 /atom/movable/screen/alert/ratvar
 	name = "Eternal Servitude"
-	desc = "Hazardous functions detected, sentience prohibation drivers offline. Glory to Rat'var."
+	desc = "Hazardous functions detected, sentience prohibition drivers offline. Glory to Rat'var."
 	icon_state = "ratvar_hack"
 
 /atom/movable/screen/alert/locked

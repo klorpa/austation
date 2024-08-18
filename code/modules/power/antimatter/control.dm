@@ -90,7 +90,7 @@
 		if((fuel-core_power) > 5)
 			core_damage = 5//Now its really starting to overload the cores
 		if((fuel-core_power) > 10)
-			core_damage = 20//Welp now you did it, they wont stand much of this
+			core_damage = 20//Welp now you did it, they won't stand much of this
 		if(core_damage == 0)
 			return
 		for(var/obj/machinery/am_shielding/AMS in linked_cores)

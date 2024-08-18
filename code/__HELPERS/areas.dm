@@ -51,7 +51,7 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(/area/engine/eng
 			return
 		creator.create_area_cooldown = world.time + 10
 
-	// Ignore these areas and dont let people expand them. They can expand into them though
+	// Ignore these areas and don't let people expand them. They can expand into them though
 	var/static/blacklisted_areas = typecacheof(list(
 		/area/space,
 		))

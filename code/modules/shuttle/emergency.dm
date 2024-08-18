@@ -218,8 +218,8 @@
 	to_chat(user, "<span class='boldwarning'>You [SSshuttle.emergency.hijack_status == NOT_BEGUN? "begin" : "continue"] to override [src]'s navigational protocols.</span>")
 	say("Software override initiated.")
 	var/turf/console_hijack_turf = get_turf(src)
-	message_admins("[src] is being overriden for hijack by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(console_hijack_turf)]")
-	log_game("[src] is being overriden for hijack by [key_name(user)] at [AREACOORD(src)]")
+	message_admins("[src] is being overridden for hijack by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(console_hijack_turf)]")
+	log_game("[src] is being overridden for hijack by [key_name(user)] at [AREACOORD(src)]")
 	. = FALSE
 	if(do_after(user, hijack_stage_time * (1 / user.mind.get_hijack_speed()), target = src))
 		increase_hijack_stage()
@@ -607,7 +607,7 @@
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "dorm_available"
 
-	//these muthafuckas arent supposed to smooth
+	//these muthafuckas aren't supposed to smooth
 	base_icon_state = null
 	smoothing_flags = null
 	smoothing_groups = null

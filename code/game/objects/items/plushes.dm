@@ -576,7 +576,7 @@
 /obj/item/toy/plush/moth/random
 	name = "\improper Random Mothplush"
 	icon_state = "moffplush_random"
-	desc = "An undefined mothperson plushy. It's a debuggable bug! (if you see this, contact an upper beign as soon as possible)."
+	desc = "An undefined mothperson plushy. It's a debuggable bug! (if you see this, contact an upper being as soon as possible)."
 
 /obj/item/toy/plush/moth/random/Initialize()
 	var moff_type = pick(subtypesof(/obj/item/toy/plush/moth) - /obj/item/toy/plush/moth/random/)
@@ -615,7 +615,7 @@
 
 /obj/item/toy/plush/moth/lovers
 	name = "lovers moth plushie"
-	desc = "An adorable mothperson plushy. It's a loveley bug!"
+	desc = "An adorable mothperson plushy. It's a lovely bug!"
 	icon_state = "moffplush_lovers"
 
 /obj/item/toy/plush/moth/whitefly
@@ -625,12 +625,12 @@
 
 /obj/item/toy/plush/moth/punished
 	name = "punished moth plushie"
-	desc = "An adorable mothperson plushy. It's a sad bug... that's quite sad actualy."
+	desc = "An adorable mothperson plushy. It's a sad bug... that's quite sad actually."
 	icon_state = "moffplush_punished"
 
 /obj/item/toy/plush/moth/firewatch
 	name = "firewatch moth plushie"
-	desc = "An adorable mothperson plushy. It's a firey bug!"
+	desc = "An adorable mothperson plushy. It's a fiery bug!"
 	icon_state = "moffplush_firewatch"
 
 /obj/item/toy/plush/moth/deadhead

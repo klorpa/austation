@@ -1,5 +1,5 @@
 /datum/ai_planning_subtree/random_speech
-	//The chance of an emote occuring each second
+	//The chance of an emote occurring each second
 	var/speech_chance = 0
 	///Hearable emotes
 	var/list/emote_hear = list()
@@ -40,4 +40,4 @@
 
 /datum/ai_planning_subtree/random_speech/mothroach
 	speech_chance = 2
-	emote_hear = list("flutters.", "flaps its wings.", "flaps its wings agressively!")
+	emote_hear = list("flutters.", "flaps its wings.", "flaps its wings aggressively!")

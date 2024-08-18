@@ -325,7 +325,7 @@
 			if(!uplink_loc)
 				uplink_loc = P
 		if(UPLINK_RADIO)
-			if(HAS_TRAIT(traitor_mob, TRAIT_MUTE))  // cant speak code into headset
+			if(HAS_TRAIT(traitor_mob, TRAIT_MUTE))  // can't speak code into headset
 				to_chat(traitor_mob, "Using a radio uplink would be impossible with your muteness! Equipping PDA Uplink..")
 				uplink_loc = PDA
 				if(!uplink_loc)

@@ -12,7 +12,7 @@
 	delivery_icon = null
 	can_weld_shut = FALSE
 	armor = list(MELEE = 30,  BULLET = 50, LASER = 50, ENERGY = 100, BOMB = 100, BIO = 0, RAD = 0, FIRE = 100, ACID = 80, STAMINA = 0)
-	anchored = TRUE //So it cant slide around after landing
+	anchored = TRUE //So it can't slide around after landing
 	anchorable = FALSE
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 	appearance_flags = KEEP_TOGETHER | PIXEL_SCALE
@@ -109,7 +109,7 @@
 	icon_state = base
 	decal = GLOB.podstyles[chosenStyle][POD_DECAL]
 	rubble_type = GLOB.podstyles[chosenStyle][POD_RUBBLE_TYPE]
-	if (!adminNamed && !specialised) //We dont want to name it ourselves if it has been specifically named by an admin using the centcom_podlauncher datum
+	if (!adminNamed && !specialised) //We don't want to name it ourselves if it has been specifically named by an admin using the centcom_podlauncher datum
 		name = GLOB.podstyles[chosenStyle][POD_NAME]
 		desc = GLOB.podstyles[chosenStyle][POD_DESC]
 	if (GLOB.podstyles[chosenStyle][POD_DOOR])
@@ -167,7 +167,7 @@
 		. += masked_decal
 		return
 	//If we're closed
-	if(!door) //We have no door, lets see if we have a decal. If not, theres nothing we need to do
+	if(!door) //We have no door, lets see if we have a decal. If not, there's nothing we need to do
 		if(decal)
 			. += decal
 		return
@@ -186,12 +186,12 @@
 
 
 /obj/structure/closet/supplypod/tool_interact(obj/item/W, mob/user)
-	if(bluespace) //We dont want to worry about interacting with bluespace pods, as they are due to delete themselves soon anyways.
+	if(bluespace) //We don't want to worry about interacting with bluespace pods, as they are due to delete themselves soon anyways.
 		return FALSE
 	else
 		..()
 
-/obj/structure/closet/supplypod/ex_act() //Explosions dont do SHIT TO US! This is because supplypods create explosions when they land.
+/obj/structure/closet/supplypod/ex_act() //Explosions don't do SHIT TO US! This is because supplypods create explosions when they land.
 	return
 
 /obj/structure/closet/supplypod/contents_explosion() //Supplypods also protect their contents from the harmful effects of fucking exploding.
@@ -234,9 +234,9 @@
 				var/mob/living/carbon/carbon_target_mob = target_living
 				for (var/bp in carbon_target_mob.bodyparts) //Look at the bodyparts in our poor mob beneath our pod as it lands
 					var/obj/item/bodypart/bodypart = bp
-					if(bodypart.body_part != HEAD && bodypart.body_part != CHEST)//we dont want to kill him, just teach em a lesson!
+					if(bodypart.body_part != HEAD && bodypart.body_part != CHEST)//we don't want to kill him, just teach em a lesson!
 						if (bodypart.dismemberable)
-							bodypart.dismember() //Using the power of flextape i've sawed this man's limb in half!
+							bodypart.dismember() //Using the power of flextape I've sawed this man's limb in half!
 							break
 			if (effectOrgans) //effectOrgans means remove every organ in our mob
 				var/mob/living/carbon/carbon_target_mob = target_living
@@ -251,12 +251,12 @@
 					var/obj/item/bodypart/bodypart = bp
 					var/destination = get_edge_target_turf(turf_underneath, pick(GLOB.alldirs))
 					if (bodypart.dismemberable)
-						bodypart.dismember() //Using the power of flextape i've sawed this man's bodypart in half!
+						bodypart.dismember() //Using the power of flextape I've sawed this man's bodypart in half!
 						bodypart.throw_at(destination, 2, 3)
 						sleep(1)
 
 		if (effectGib) //effectGib is on, that means whatever's underneath us better be fucking oof'd on
-			target_living.adjustBruteLoss(5000) //THATS A LOT OF DAMAGE (called just in case gib() doesnt work on em)
+			target_living.adjustBruteLoss(5000) //THAT'S A LOT OF DAMAGE (called just in case gib() doesn't work on em)
 			if (!QDELETED(target_living))
 				target_living.gib() //After adjusting the fuck outta that brute loss we finish the job with some satisfying gibs
 		else
@@ -608,7 +608,7 @@
 	if (pod.style != STYLE_INVISIBLE)
 		pod.add_filter("motionblur",1,list("type"="motion_blur", "x"=0, "y"=3))
 	pod.forceMove(drop_location())
-	for (var/mob/living/M in pod) //Remember earlier (initialization) when we moved mobs into the pod_landingzone so they wouldnt get lost in nullspace? Time to get them out
+	for (var/mob/living/M in pod) //Remember earlier (initialization) when we moved mobs into the pod_landingzone so they wouldn't get lost in nullspace? Time to get them out
 		M.reset_perspective(null)
 	var/angle = effectCircle ? rand(0,360) : rand(70,110) //The angle that we can come in from
 	pod.pixel_x = cos(angle)*32*length(smoke_effects) //Use some ADVANCED MATHEMATICS to set the animated pod's position to somewhere on the edge of a circle with the center being the target

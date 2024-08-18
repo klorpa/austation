@@ -6,7 +6,7 @@
  */
 
 /**
- * Paper is now using markdown (like in github pull notes) for ALL rendering
+ * Paper is now using markdown (like in GitHub pull notes) for ALL rendering
  * so we do loose a bit of functionality but we gain in easy of use of
  * paper and getting rid of that crashing bug
  */
@@ -752,7 +752,7 @@
 		if(beernuke.r_code == "ADMIN")
 			beernuke.r_code = random_code(5)
 		code = beernuke.r_code
-	default_raw_text = "important party info, DONT FORGET: <b>[code]</b>"
+	default_raw_text = "important party info, DON'T FORGET: <b>[code]</b>"
 
 /obj/item/paper/troll
 	name = "very special note"

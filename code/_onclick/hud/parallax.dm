@@ -325,7 +325,7 @@
 /atom/movable/screen/parallax_layer/planet
 	icon_state = "planet"
 	blend_mode = BLEND_OVERLAY
-	absolute = TRUE //Status of seperation
+	absolute = TRUE //Status of separation
 	speed = 3
 	layer = 30
 	smooth_movement = TRUE
@@ -338,4 +338,4 @@
 		invisibility = INVISIBILITY_ABSTRACT
 
 /atom/movable/screen/parallax_layer/planet/update_o()
-	return //Shit wont move
+	return //Shit won't move

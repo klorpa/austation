@@ -1,5 +1,5 @@
 //Note to future generations: I didn't write this god-awful code I just ported it to the event system and tried to make it less moon-speaky.
-//Don't judge me D; ~Carn //Maximum judging occuring - Remie.
+//Don't judge me D; ~Carn //Maximum judging occurring - Remie.
 // Tut tut Remie, let's keep our comments constructive. - coiax
 
 /*

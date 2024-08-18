@@ -45,7 +45,7 @@
 
 	///Everytime the artifact is used this increases. When this is successfully proc'd the artifact gains a malfunction and this is lowered.
 	var/malfunction_chance = 0
-	///How much the chance can change in a sinlge itteration
+	///How much the chance can change in a single iteration
 	var/malfunction_mod = 1
 	///Ref to trait list for malfunctions
 	var/list/blacklist_ref
@@ -61,7 +61,7 @@
 /obj/item/xenoartifact/Initialize(mapload, difficulty)
 	. = ..()
 
-	generate_xenoa_statics() //This wont load if it's already done, aka this wont spam
+	generate_xenoa_statics() //This won't load if it's already done, aka this won't spam
 
 	blacklist_ref = GLOB.xenoa_bluespace_blacklist
 	material = difficulty //Difficulty is set, in most cases
@@ -237,7 +237,7 @@
 		charge += charge_mod
 		charge = (charge+charge_req)/1.9 //Not quite an average. Generally produces better results.
 
-		for(var/datum/xenoartifact_trait/minor/t in traits)//Minor traits aren't apart of the target loop, specifically becuase they pass data into it.
+		for(var/datum/xenoartifact_trait/minor/t in traits)//Minor traits aren't apart of the target loop, specifically because they pass data into it.
 			t.activate(src, user, user)
 			log_game("[src] activated minor trait [t] at [world.time]. Located at [AREACOORD(src)]")
 
@@ -302,13 +302,13 @@
 	var/list/selection = trait_list.Copy() //Selectable traits
 	selection -= blacklist_traits
 	if(selection.len < 1)
-		log_game("An impossible event has occured. [src] has failed to generate any traits!")
+		log_game("An impossible event has occurred. [src] has failed to generate any traits!")
 		return
 	new_trait = pick_weight(selection)
 	blacklist += new_trait //Add chosen trait to blacklist
 	traits += new new_trait
 	new_trait = new new_trait //type converting doesn't work too well here but this should be fine.
-	blacklist += new_trait.blacklist_traits //Cant use initial() to access lists without bork'ing it
+	blacklist += new_trait.blacklist_traits //Can't use initial() to access lists without bork'ing it
 	return new_trait
 
 ///generates a malfunction respective to the artifact's type - don't use anywhere but for check_charge malfunctions
@@ -329,7 +329,7 @@
 		. = process_target(M)
 	if(isliving(loc) && !.)
 		. = process_target(loc)
-	//Return a list becuase byond is fucky and WILL overwrite the typing
+	//Return a list because byond is fucky and WILL overwrite the typing
 	return list(.)
 
 ///Returns the desired trait and it's values if it's in the artifact's list
@@ -429,7 +429,7 @@
 	..()
 
 /datum/component/xenoartifact_pricing ///Pricing component for shipping solution. Consider swapping to cargo after change.
-	///Buying and selling related, based on guess qaulity
+	///Buying and selling related, based on guess quality
 	var/modifier = 0.5
 	///default price gets generated if it isn't set by console. This only happens if the artifact spawns outside of that process
 	var/price

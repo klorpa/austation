@@ -236,7 +236,7 @@ GLOBAL_LIST_INIT(fluid_duct_recipes, list(
 	var/mode = BUILD_MODE | DESTROY_MODE | WRENCH_MODE
 	/// Bitflags for upgrades
 	var/upgrade_flags
-	var/locked = FALSE //wheter we can change categories. Useful for the plumber
+	var/locked = FALSE //whether we can change categories. Useful for the plumber
 	var/ranged = FALSE
 
 	/// you can remove these through RPD

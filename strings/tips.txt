@@ -82,7 +82,7 @@ As a Scientist, you can use the discovery scanner on station pets to get some di
 As a Scientist, getting drunk just enough will speed up research. Skol!
 As a Scientist, you can use the Destructive Analyzer to unlock new tech nodes.
 As an Explorer, you can use the Newscaster units to message the station if you ever find yourself stranded without your ship.
-As an Explorer, you can find technology disks which will unlock new tech nodes when delievered back to R&D!
+As an Explorer, you can find technology disks which will unlock new tech nodes when delivered back to R&D!
 As a Roboticist, keep an ear out for anomaly announcements. If you get your hands on an anomaly core, you can build a Phazon mech!
 As a Roboticist, you can repair your cyborgs with a welding tool. If they have taken burn damage, you can remove their battery, expose the wiring with a screwdriver and replace their wires with a cable coil.
 As a Roboticist, you can reset a cyborg's module by cutting and mending the reset wire with a wire cutter.

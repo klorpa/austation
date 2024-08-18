@@ -109,7 +109,7 @@
 	if(client.interviewee)
 		return FALSE
 
-	//Determines Relevent Population Cap
+	//Determines Relevant Population Cap
 	var/relevant_cap
 	var/hpc = CONFIG_GET(number/hard_popcap)
 	var/epc = CONFIG_GET(number/extreme_popcap)

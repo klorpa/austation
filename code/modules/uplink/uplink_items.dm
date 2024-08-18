@@ -423,10 +423,10 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/bundles_TC/crate/shuttle
 	name = "Stolen Shuttle Creation Kit"
-	desc = "Every syndicate team needs their own shuttle. It's a shame you weren't supplied with one, but thats not a problem\
+	desc = "Every syndicate team needs their own shuttle. It's a shame you weren't supplied with one, but that's not a problem\
 			if you can spare some TC! The all new shuttle creation kit (produced by the syndicate) contains everything you need\
 			to get flying! All syndicate agents are advised to ignore the Nanotrasen labels on products. Space proof suits not included."
-	cost = 15	//There are multiple uses for the RCD and plasma canister, but both are easilly accessible for items that cost less than all of their TC.
+	cost = 15	//There are multiple uses for the RCD and plasma canister, but both are easily accessible for items that cost less than all of their TC.
 	contents = list(
 		/obj/machinery/portable_atmospherics/canister/plasma = 1,
 		/obj/item/construction/rcd/combat = 1,
@@ -1715,7 +1715,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/device_tools/syndicate_teleporter
 	name = "Experimental Syndicate Jaunter"
 	desc = "The Syndicate jaunter is a handheld device that jaunts the user 4-8 meters forward. \
-		Anyone caught in the wake of the jaunter will be knocked off their feet and recieve minor damage. \
+		Anyone caught in the wake of the jaunter will be knocked off their feet and receive minor damage. \
 		Due to the Syndicate's more limited research of teleportation technologies, it is incapable of phasing the user \
 		through solid matter nor is it capable of teleporting them across longer ranges."
 	item = /obj/item/teleporter
@@ -2241,7 +2241,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/role_restricted/spanish_flu
 	name = "Spanish Flu Culture"
 	desc = "A bottle of cursed blood, full of angry spirits which will burn all the heretics with the fires of hell.\
-			At least. thats what the label says"
+			At least. that's what the label says"
 	item = /obj/item/reagent_containers/glass/bottle/fluspanish
 	cost = 12
 	restricted_roles = list(JOB_NAME_CHAPLAIN, JOB_NAME_VIROLOGIST)

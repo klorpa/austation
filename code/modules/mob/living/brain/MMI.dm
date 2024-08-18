@@ -17,7 +17,7 @@
 /obj/item/mmi/Initialize(mapload)
 	. = ..()
 	radio = new(src) //Spawns a radio inside the MMI.
-	radio.broadcasting = FALSE //researching radio mmis turned the robofabs into radios because this didnt start as 0.
+	radio.broadcasting = FALSE //researching radio mmis turned the robofabs into radios because this didn't start as 0.
 	laws.set_laws_config()
 
 /obj/item/mmi/Destroy()

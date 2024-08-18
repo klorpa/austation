@@ -14,7 +14,7 @@
 	GLOB.blob_cores += src
 	START_PROCESSING(SSobj, src)
 	AddElement(/datum/element/point_of_interest)
-	update_icon() //so it atleast appears
+	update_icon() //so it at least appears
 	if(!placed && !overmind)
 		return INITIALIZE_HINT_QDEL
 	if(overmind)

@@ -64,7 +64,7 @@
 			switch(O.slot) //i hate doing it this way, but the cleaner way runtimes and does not work
 				if(ORGAN_SLOT_BRAIN)
 					O.name = "enigmatic gearbox"
-					O.desc ="An engineer would call this inconcievable wonder of gears and metal a 'black box'"
+					O.desc ="An engineer would call this inconceivable wonder of gears and metal a 'black box'"
 					O.icon_state = "brain-clock"
 					O.status = ORGAN_ROBOTIC
 					O.organ_flags = ORGAN_SYNTHETIC
@@ -240,7 +240,7 @@
 	desc = "A fragile set of small, mechanical cameras."
 	icon_state = "clockwork_eyeballs"
 
-/obj/item/organ/heart/clockwork //this heart doesnt have the fancy bits normal cyberhearts do. However, it also doesnt fucking kill you when EMPd
+/obj/item/organ/heart/clockwork //this heart doesn't have the fancy bits normal cyberhearts do. However, it also doesn't fucking kill you when EMPd
 	name = "biomechanical pump"
 	desc = "A complex, multi-valved hydraulic pump, which fits perfectly where a heart normally would."
 	icon_state = "heart-clock"
@@ -280,7 +280,7 @@
 
 /obj/item/organ/brain/clockwork
 	name = "enigmatic gearbox"
-	desc ="An engineer would call this inconcievable wonder of gears and metal a 'black box'"
+	desc ="An engineer would call this inconceivable wonder of gears and metal a 'black box'"
 	icon_state = "brain-clock"
 	status = ORGAN_ROBOTIC
 	organ_flags = ORGAN_SYNTHETIC
@@ -306,7 +306,7 @@
 	status = ORGAN_ROBOTIC
 	alcohol_tolerance = 0
 	toxLethality = 0
-	toxTolerance = 1 //while the organ isn't damaged by doing its job, it doesnt do it very well
+	toxTolerance = 1 //while the organ isn't damaged by doing its job, it doesn't do it very well
 
 /obj/item/organ/lungs/clockwork
 	name = "clockwork diaphragm"

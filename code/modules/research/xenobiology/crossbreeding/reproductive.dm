@@ -32,7 +32,7 @@ Reproductive extracts:
 		to_chat(user, "<span class='warning'>[src] is still digesting!</span>")
 		return
 
-	if(length(contents) >= feed_amount) //if for some reason the contents are full, but it didnt digest, attempt to digest again
+	if(length(contents) >= feed_amount) //if for some reason the contents are full, but it didn't digest, attempt to digest again
 		to_chat(user,"<span class='warning'>[src] appears to be full but is not digesting! Maybe poking it stimulated it to digest.</span>")
 		slime_storage.process_cubes(src, user)
 		return
@@ -56,7 +56,7 @@ Reproductive extracts:
 			playsound(src, 'sound/items/eatfood.ogg', 20, TRUE)
 			slime_storage.locked = TRUE //relock once its done inserting
 			return
-		slime_storage.locked = TRUE //it couldnt insert for some reason, relock it
+		slime_storage.locked = TRUE //it couldn't insert for some reason, relock it
 		to_chat(user, "<span class='notice'>The [src] rejects the Monkey Cube!</span>") //in case it fails to insert for whatever reason you get feedback
 
 /obj/item/slimecross/reproductive/Destroy()

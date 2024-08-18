@@ -89,7 +89,7 @@
 				return
 			selected_category = requested_category
 
-		if(href_list["disposeI"])  //Get rid of a reagent incase you add the wrong one by mistake
+		if(href_list["disposeI"])  //Get rid of a reagent in case you add the wrong one by mistake
 			reagents.del_reagent(text2path(href_list["disposeI"]))
 
 		if(href_list["make"])
@@ -121,7 +121,7 @@
 	if(reagents.has_reagent(/datum/reagent/medicine/synthflesh, being_built.reagents_list[/datum/reagent/medicine/synthflesh]*prod_coeff))	//sanity check, if this happens we are in big trouble
 		reagents.remove_reagent(/datum/reagent/medicine/synthflesh,being_built.reagents_list[/datum/reagent/medicine/synthflesh]*prod_coeff)
 		var/buildpath = being_built.build_path
-		if(ispath(buildpath, /obj/item/bodypart))	//This feels like spatgheti code, but i need to initilise a limb somehow
+		if(ispath(buildpath, /obj/item/bodypart))	//This feels like spaghetti code, but i need to initialise a limb somehow
 			build_limb(create_buildpath())
 		else
 			//Just build whatever it is
@@ -144,7 +144,7 @@
 	return text2path(path)
 
 /obj/machinery/limbgrower/proc/build_limb(buildpath)
-	//i need to create a body part manually using a set icon (otherwise it doesnt appear)
+	//i need to create a body part manually using a set icon (otherwise it doesn't appear)
 	var/obj/item/bodypart/limb
 	limb = new buildpath(loc)
 	limb.icon_state = "[selected_category]_[limb.body_zone]"

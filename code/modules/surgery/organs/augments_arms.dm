@@ -1,6 +1,6 @@
 /obj/item/organ/cyberimp/arm
 	name = "arm-mounted implant"
-	desc = "You shouldn't see this! Adminhelp and report this as an issue on github!"
+	desc = "You shouldn't see this! Adminhelp and report this as an issue on GitHub!"
 	zone = BODY_ZONE_R_ARM
 	icon_state = "implant-toolkit"
 	w_class = WEIGHT_CLASS_SMALL

@@ -41,7 +41,7 @@
 #define STATION_NUKED 20
 /// The cult was able to summon Rat-var
 #define CLOCK_SUMMON 21
-/// The cult failed to protect the ark but there are cult-alighned silicons
+/// The cult failed to protect the ark but there are cult-aligned silicons
 #define CLOCK_SILICONS 22
 /// The cult failed to protect the ark
 #define CLOCK_PROSELYTIZATION 23

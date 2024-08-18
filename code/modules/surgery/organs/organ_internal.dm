@@ -26,7 +26,7 @@
 	var/high_threshold_cleared
 	var/low_threshold_cleared
 
-	///When you take a bite you cant jam it in for surgery anymore.
+	///When you take a bite you can't jam it in for surgery anymore.
 	var/useable = TRUE
 	var/list/food_reagents = list(/datum/reagent/consumable/nutriment = 5)
 

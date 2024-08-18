@@ -27,7 +27,7 @@
 
 	real_target.visible_message(
 		"<span class='danger'>[real_target] turns pale as a red glow envelops [real_target.p_them()]!</span>",
-		"<span class='danger'>You turn pale as a red glow enevelops you!</span>",
+		"<span class='danger'>You turn pale as a red glow envelops you!</span>",
 	)
 
 	real_target.adjustBruteLoss(20)
@@ -37,7 +37,7 @@
 		return
 
 	real_target.blood_volume -= 20
-	if(living_user.blood_volume < BLOOD_VOLUME_MAXIMUM) // we dont want to explode from casting
+	if(living_user.blood_volume < BLOOD_VOLUME_MAXIMUM) // we don't want to explode from casting
 		living_user.blood_volume += 20
 
 /obj/effect/proc_holder/spell/pointed/blood_siphon/can_target(atom/target, mob/user, silent)

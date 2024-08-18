@@ -51,7 +51,7 @@
 
 	//Coloring and proper item icon update
 	var/skin_tone = ""
-	var/should_draw_greyscale = TRUE //Limbs need this information as a back-up incase they are generated outside of a carbon (limbgrower)
+	var/should_draw_greyscale = TRUE //Limbs need this information as a back-up in case they are generated outside of a carbon (limbgrower)
 	var/species_color = ""
 	var/mutation_color = ""
 	var/no_update = 0
@@ -284,7 +284,7 @@
 	return FALSE
 
 //Change limb between
-//Note:This proc only exists because I can't be arsed to remove it yet. Theres no real reason this should ever be used.
+//Note:This proc only exists because I can't be arsed to remove it yet. There's no real reason this should ever be used.
 /obj/item/bodypart/proc/change_bodypart_status(new_limb_status, heal_limb, change_icon_to_default)
 	if(!(bodytype & new_limb_status))
 		bodytype &= ~(BODYTYPE_ROBOTIC & BODYTYPE_ORGANIC)

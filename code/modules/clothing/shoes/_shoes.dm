@@ -2,7 +2,7 @@
 	name = "shoes"
 	icon = 'icons/obj/clothing/shoes.dmi'
 	desc = "Comfortable-looking shoes."
-	gender = PLURAL //Carn: for grammarically correct text-parsing
+	gender = PLURAL //Carn: for grammatically correct text-parsing
 	var/chained = 0
 
 	body_parts_covered = FEET
@@ -33,7 +33,7 @@
 			r_leg.dismember()
 			playsound(user,pick('sound/misc/desecration-01.ogg','sound/misc/desecration-02.ogg','sound/misc/desecration-01.ogg') ,50, 1, -1)
 		return BRUTELOSS
-	else//didnt realize this suicide act existed (was in miscellaneous.dm) and didnt want to remove it, so made it a 50/50 chance. Why not!
+	else//didn't realize this suicide act existed (was in miscellaneous.dm) and didn't want to remove it, so made it a 50/50 chance. Why not!
 		user.visible_message("<span class='suicide'>[user] is bashing [user.p_their()] own head in with [src]! Ain't that a kick in the head?</span>")
 		for(var/i in 1 to 3)
 			sleep(3)

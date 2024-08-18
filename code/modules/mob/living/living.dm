@@ -832,7 +832,7 @@
 	. = TRUE
 	if(pulledby.grab_state || resting || HAS_TRAIT(src, TRAIT_GRABWEAKNESS))
 		var/altered_grab_state = pulledby.grab_state
-		if((resting || HAS_TRAIT(src, TRAIT_GRABWEAKNESS)) && pulledby.grab_state < GRAB_KILL) //If resting, resisting out of a grab is equivalent to 1 grab state higher. wont make the grab state exceed the normal max, however
+		if((resting || HAS_TRAIT(src, TRAIT_GRABWEAKNESS)) && pulledby.grab_state < GRAB_KILL) //If resting, resisting out of a grab is equivalent to 1 grab state higher. won't make the grab state exceed the normal max, however
 			altered_grab_state++
 
 		var/resist_chance = BASE_GRAB_RESIST_CHANCE // see defines/combat.dm
@@ -979,7 +979,7 @@
 	var/turf/T = get_turf(src)
 	if(!T)
 		return FALSE
-	if(is_centcom_level(T.z)) //dont detect mobs on centcom
+	if(is_centcom_level(T.z)) //don't detect mobs on centcom
 		return FALSE
 	if(is_away_level(T.z))
 		return FALSE
@@ -1323,7 +1323,7 @@
 		var/mob/living/M = dropping
 		if(M.can_be_held && U.pulling == M)
 			M.mob_try_pickup(U)//blame kevinz
-			return//dont open the mobs inventory if you are picking them up
+			return//don't open the mobs inventory if you are picking them up
 	. = ..()
 
 /mob/living/proc/mob_pickup(mob/living/L)

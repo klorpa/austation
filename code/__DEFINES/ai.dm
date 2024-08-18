@@ -168,7 +168,7 @@
 
 ///bane ai
 #define BB_BANE_BATMAN "BB_bane_batman"
-//yep thats it
+//yep that's it
 
 
 //Hunting defines

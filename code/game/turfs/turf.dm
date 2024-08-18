@@ -591,7 +591,7 @@ GLOBAL_LIST_EMPTY(created_baseturf_lists)
 		var/turf/chosen_location = pick(get_safe_random_station_turfs())
 		if(centered)
 			chosen_location = get_teleport_turf(src, precision) //Using the random teleportation logic here to find a destination turf
-		// We don't want them close to each other - at least 1 tile of seperation
+		// We don't want them close to each other - at least 1 tile of separation
 		var/list/nearby_things = range(1, chosen_location)
 		var/obj/effect/heretic_influence/what_if_i_have_one = locate() in nearby_things
 		var/obj/effect/visible_heretic_influence/what_if_i_had_one_but_its_used = locate() in nearby_things

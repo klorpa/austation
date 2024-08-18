@@ -1,4 +1,4 @@
-//Global lists so they can be editted by admins
+//Global lists so they can be edited by admins
 GLOBAL_LIST_INIT(battle_royale_basic_loot, list(
 		/obj/item/soap,
 		/obj/item/knife/kitchen,

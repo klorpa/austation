@@ -26,12 +26,12 @@
 	gold_core_spawnable = NO_SPAWN //making these spawn from gold cores is kinda bad for xenobio. these grubs can be further implemented for it at a later date if someone wants to
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
-	maxbodytemp = 360 //really, *really* dont like heat
+	maxbodytemp = 360 //really, *really* don't like heat
 	deathmessage = "curls up and stops moving."
 	var/patience = 30
 	var/growthstage = 1 //1-3.
 	var/food = 0
-	var/hibernating = FALSE //if they dont aggro, they hibernate until they do. They will allow themselves to be killed, butchered, or eaten.
+	var/hibernating = FALSE //if they don't aggro, they hibernate until they do. They will allow themselves to be killed, butchered, or eaten.
 	var/hibernationcounter = 0
 	var/list/grub_diseases = list()
 
@@ -41,7 +41,7 @@
 		return TRUE
 	return FALSE
 
-/mob/living/simple_animal/hostile/redgrub/spawn_gibs() //redgrubs dont have much in the way of gibs or mess. just meat.
+/mob/living/simple_animal/hostile/redgrub/spawn_gibs() //redgrubs don't have much in the way of gibs or mess. just meat.
 	new /obj/effect/decal/cleanable/insectguts(drop_location())
 	playsound(drop_location(), 'sound/effects/blobattack.ogg', 60, TRUE)
 

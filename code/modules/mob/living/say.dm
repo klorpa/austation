@@ -27,7 +27,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 
 	//kinda localization -- rastaf0
-	//same keys as above, but on russian keyboard layout.
+	//same keys as above, but on Russian keyboard layout.
 	// Location
 	"к" = MODE_R_HAND,
 	"л" = MODE_L_HAND,

@@ -148,7 +148,7 @@
 	custom_materials = list(/datum/material/adamantine = 400)
 
 /obj/item/coin/mythril
-	custom_materials = list(/datum/material/plastic = 400)// cause we dont have mythril as a material, yet for some reason mappers like using this coin
+	custom_materials = list(/datum/material/plastic = 400)// cause we don't have mythril as a material, yet for some reason mappers like using this coin
 //	custom_materials = list(/datum/material/mythril = 400)
 
 /obj/item/coin/plastic

@@ -224,7 +224,7 @@
 /obj/machinery/atmospherics/proc/unsafe_pressure_release(mob/living/carbon/user, pressures = null)
 	if(!user)
 		return
-	if(ishuman(user)) //other carbons like monkeys can unwrench but cant wear magboots
+	if(ishuman(user)) //other carbons like monkeys can unwrench but can't wear magboots
 		if(istype(user.shoes, /obj/item/clothing/shoes/magboots))
 			var/obj/item/clothing/shoes/magboots/M = user.shoes
 			if(M.negates_gravity())
@@ -297,7 +297,7 @@
 #define VENT_SOUND_DELAY 30
 
 /obj/machinery/atmospherics/relaymove(mob/living/user, direction)
-	if(!direction || !(direction in GLOB.cardinals_multiz)) //cant go this way.
+	if(!direction || !(direction in GLOB.cardinals_multiz)) //can't go this way.
 		return
 	if(user in buckled_mobs)// fixes buckle ventcrawl edgecase fuck bug
 		return

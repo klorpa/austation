@@ -9,13 +9,13 @@
 	rcd_delay = 15
 	active_power_usage = 500
 
-	///Amount we produce for every process. Ideally keep under 5 since thats currently the standard duct capacity
+	///Amount we produce for every process. Ideally keep under 5 since that's currently the standard duct capacity
 	var/amount = 1
 	///The maximum we can produce for every process
 	buffer = 5
 	///I track them here because I have no idea how I'd make tgui loop like that
 	var/static/list/possible_amounts = list(0,1,2,3,4,5)
-	///The reagent we are producing. We are a typepath, but are also typecast because there's several occations where we need to use initial.
+	///The reagent we are producing. We are a typepath, but are also typecast because there's several occasions where we need to use initial.
 	var/datum/reagent/reagent_id = null
 	///reagent overlay. its the colored pipe thingies. we track this because overlays.Cut() is bad
 	var/image/r_overlay
